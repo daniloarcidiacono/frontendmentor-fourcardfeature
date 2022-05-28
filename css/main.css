@@ -31,4 +31,10 @@ html {
   width: 100%;
 }
 
+body {
+  font-family: Poppins;
+  font-size: 0.9375rem;
+  font-weight: var(--font-weight-normal);
+}
+
 /*# sourceMappingURL=main.css.map */

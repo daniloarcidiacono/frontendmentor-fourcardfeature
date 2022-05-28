@@ -1,6 +1,6 @@
-@import "_utils.scss";
+@use 'devices';
 
-@include device(mobile) {
+@include devices.device(mobile) {
     body {
         // height: 100%;
         // padding: 1.7rem 5rem;

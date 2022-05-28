@@ -1,0 +1,10 @@
+@import "_utils.scss";
+
+@include device(desktop) {
+    body {
+        // height: 100%;
+        // padding: 1.7rem 5rem;
+        // background: var(--color-violet)
+                    // url('../images/bg-desktop.svg') left top / auto 100% no-repeat;
+    }
+}

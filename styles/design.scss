@@ -1,0 +1,33 @@
+html {
+    &.desktop {
+        width: 1440px;
+        height: 922px;
+
+        .design {
+            display: block;
+            width: 1440px;
+            height: 922px;
+            content: url('../design/desktop-design.jpg');    
+        }
+    }
+
+    &.mobile {
+        width: 375px;
+        height: 1360px; 
+
+        .design {
+            display: block;
+            width: 375px;
+            height: 1360px;
+            content: url('../design/mobile-design.jpg');    
+        }
+    }
+}
+
+.design {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    image-rendering: pixelated;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "four-card-feature-section-master",
+  "version": "0.1.0",
+  "description": "Solution to the 'Four card feature section' challenge on Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-transpile": "sass styles:css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniloarcidiacono/frontendmentor-fourcardfeature.git"
+  },
+  "keywords": [
+    "Huddle",
+    "Frontend",
+    "Mentor"
+  ],
+  "author": "Danilo Arcidiacono",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daniloarcidiacono/frontendmentor-fourcardfeature/issues"
+  },
+  "homepage": "https://github.com/daniloarcidiacono/frontendmentor-fourcardfeature#readme",
+  "devDependencies": {
+    "sass": "^1.50.1"
+  }
+}

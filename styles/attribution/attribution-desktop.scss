@@ -1,0 +1,7 @@
+@use '../devices';
+
+@include devices.device(desktop) {
+    .attribution {
+        width: 100%;
+    }
+}

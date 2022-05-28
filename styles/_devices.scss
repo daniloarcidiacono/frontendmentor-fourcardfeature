@@ -8,13 +8,13 @@
         //  precision for these comparisons."
         //
         // See also: https://github.com/elementor/elementor/issues/5221#issuecomment-518580100
-        @media (max-width: 375.98px) {
+        @media (max-width: 771.98px) {
             @content;
         }
     }
     
     @if $breakpoint == desktop {
-        @media screen and (min-width: 376px) {
+        @media screen and (min-width: 772px) {
             @content;
         }
     }

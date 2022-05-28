@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main-desktop.css"}
+{"version":3,"sourceRoot":"","sources":["../styles/_devices.scss","../styles/main-desktop.scss"],"names":[],"mappings":"AAgBQ;ECbJ;IACI;IACA;;EAEA;IACI;;EAIJ;IACI;;;EAIR;IACI;IACA;;EAKA;IACI;IACA;IACA;IACA;;EAIJ;IACI;IACA;IACA;IACA;;EAEA;IAEI","file":"main-desktop.css"}

@@ -13,14 +13,71 @@
   src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
   font-weight: 600;
 }
+.card {
+  padding: 1rem 1.5rem;
+  border-radius: 6px;
+  max-width: 300px;
+  text-align: left;
+  background-color: var(--color-white);
+  box-shadow: 0px 3px 20px 3px rgba(0, 0, 0, 0.1);
+}
+.card--supervisor {
+  border-top: 4px solid var(--color-cyan);
+}
+.card--teambuilder {
+  border-top: 4px solid var(--color-red);
+}
+.card--karma {
+  border-top: 4px solid var(--color-orange);
+}
+.card--calculator {
+  border-top: 4px solid var(--color-blue);
+}
+.card__title {
+  margin: 0.5rem 0;
+  font-size: 1.25rem;
+}
+.card__text {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--color-grayish-blue);
+}
+.card__icon {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  width: 56px;
+}
+
+@media screen and (min-width: 772px) {
+  .card__icon {
+    width: 64px;
+  }
+}
+.attribution {
+  display: inline-block;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-normal);
+  text-align: center;
+}
+.attribution a {
+  color: var(--color-red);
+}
+
+@media screen and (min-width: 772px) {
+  .attribution {
+    width: 100%;
+  }
+}
 :root {
   --color-red: hsl(0, 78%, 62%);
   --color-cyan: hsl(180, 62%, 55%);
   --color-orange: hsl(34, 97%, 64%);
   --color-blue: hsl(212, 86%, 64%);
-  --very-dark-blue: hsl(234, 12%, 34%);
-  --grayish-blue: hsl(229, 6%, 66%);
-  --very-light-gray: hsl(0, 0%, 98%);
+  --color-very-dark-blue: hsl(234, 12%, 34%);
+  --color-grayish-blue: hsl(229, 6%, 66%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
   --color-white: #fff;
   --font-weight-extralight: 200;
   --font-weight-normal: 400;
@@ -32,9 +89,79 @@ html {
 }
 
 body {
+  padding: 5.2rem 2rem;
+  margin: 0;
   font-family: Poppins;
   font-size: 0.9375rem;
   font-weight: var(--font-weight-normal);
+  text-align: center;
+  color: var(--color-very-dark-blue);
+  background-color: var(--color-very-light-gray);
+}
+
+header {
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-extralight);
+}
+header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-semibold);
+}
+header p {
+  color: var(--color-grayish-blue);
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (min-width: 772px) {
+  header {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+  header h1 {
+    font-size: 2.3rem;
+  }
+  header h2 {
+    font-size: 2.3rem;
+  }
+
+  main {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  main.desktop--grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, max-content));
+    grid-row-gap: 2rem;
+    justify-content: center;
+  }
+  main.desktop--flex {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main.desktop--flex > * {
+    flex: 1 1 33%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

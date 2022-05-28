@@ -1,0 +1,9 @@
+@use '../devices';
+
+@include devices.device(desktop) {
+    .card {
+        &__icon {
+            width: 64px;
+        }
+    }
+}

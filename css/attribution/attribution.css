@@ -3,9 +3,16 @@
   font-family: Poppins;
   font-size: 1.1rem;
   font-weight: var(--font-weight-normal);
+  text-align: center;
 }
 .attribution a {
-  color: var(--color-purple);
+  color: var(--color-red);
+}
+
+@media screen and (min-width: 772px) {
+  .attribution {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=attribution.css.map */

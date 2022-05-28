@@ -1,5 +1,7 @@
 @use 'units';
 @use 'typography';
+@import 'card/card';
+@import 'attribution/attribution';
 
 $debug: false;
 
@@ -9,9 +11,9 @@ $debug: false;
     --color-cyan: hsl(180, 62%, 55%);
     --color-orange: hsl(34, 97%, 64%);
     --color-blue: hsl(212, 86%, 64%);
-    --very-dark-blue: hsl(234, 12%, 34%);
-    --grayish-blue: hsl(229, 6%, 66%);
-    --very-light-gray: hsl(0, 0%, 98%);
+    --color-very-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-very-light-gray: hsl(0, 0%, 98%);
     --color-white: #fff;
 
     // Font weights
@@ -26,7 +28,54 @@ html {
 }
 
 body {
+    padding: 5.2rem 2rem;
+    margin: 0;
+
     font-family: Poppins;
     font-size: units.pxToRem(15px);
     font-weight: var(--font-weight-normal);
+    text-align: center;
+
+    color: var(--color-very-dark-blue);
+    background-color: var(--color-very-light-gray);
 }
+
+header {
+    text-align: center;
+    
+    h1 {
+        margin: 0;
+        
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-extralight);
+    }
+
+    h2 {
+        margin: 0;
+
+        font-size: 1.5rem;
+        font-weight: var(--font-weight-semibold);
+    }
+
+    p {
+        color: var(--color-grayish-blue);
+    }
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+    
+    margin-top: 5rem;
+}
+
+.cards__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+@import 'main-desktop';

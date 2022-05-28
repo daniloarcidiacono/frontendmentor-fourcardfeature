@@ -1,10 +1,45 @@
 @use 'devices';
 
 @include devices.device(desktop) {
-    body {
-        // height: 100%;
-        // padding: 1.7rem 5rem;
-        // background: var(--color-violet)
-                    // url('../images/bg-desktop.svg') left top / auto 100% no-repeat;
+    header {
+        margin: 0 auto;
+        max-width: 500px;
+
+        h1 {
+            font-size: 2.3rem;
+        }
+
+
+        h2 {
+            font-size: 2.3rem;
+        }
+    }
+
+    main {
+        margin-top: 5rem;
+        margin-bottom: 5rem;        
+
+        // Solution with grid
+        // Note: this gives a weird result in Chrome mobile when requesting desktop version 
+        // (first and third column get stretched vertically).
+        &.desktop--grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(auto, max-content));
+            grid-row-gap: 2rem;
+            justify-content: center;
+        }
+
+        // Alternative solution with flex
+        &.desktop--flex {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            gap: 2rem;
+            
+            & > * { 
+                // We need to set flex-basis to 33%, otherwise the columns will not shrink the same amount
+                flex: 1 1 33%; 
+            }
+        }
     }
 }

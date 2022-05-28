@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server . -c-1",
     "sass-transpile": "sass styles:css --watch"
   },
   "repository": {
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/daniloarcidiacono/frontendmentor-fourcardfeature#readme",
   "devDependencies": {
+    "http-server": "^14.1.0",
     "sass": "^1.50.1"
   }
 }
